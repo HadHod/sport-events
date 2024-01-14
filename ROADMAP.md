@@ -2,11 +2,12 @@
 
 - [x] Angular project init
 - [ ] Project modules structure
+- [ ] Add lozy loaded About route
 - [ ] Data models design
 - [ ] Firebase connection with data
-- [ ] Authorization
+- [ ] Authentication
 - [ ] Admin panel
+- [ ] First deploy (MVP)
 - [ ] Google maps
-- [ ] PWA
 - [ ] GitHUB CI/CD
-- [ ] First deploy
+- [ ] PWA
