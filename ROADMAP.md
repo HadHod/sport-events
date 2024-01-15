@@ -7,6 +7,7 @@
 - [ ] Firebase connection with data
 - [ ] Authentication
 - [ ] Admin panel
+- [ ] Tests
 - [ ] First deploy (MVP)
 - [ ] Google maps
 - [ ] GitHUB CI/CD
