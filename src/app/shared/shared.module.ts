@@ -4,6 +4,7 @@ import { EventCardComponent } from './event-card/event-card.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FormsModule } from '@angular/forms';
 import { ChipComponent } from './chip/chip.component';
+import { EventCardImageComponent } from './event-card-image/event-card-image.component';
 
 const COMPONENTS = [
   EventCardComponent,
@@ -14,6 +15,7 @@ const COMPONENTS = [
 @NgModule({
   declarations: [
     COMPONENTS,
+    EventCardImageComponent,
   ],
   imports: [
     CommonModule,
