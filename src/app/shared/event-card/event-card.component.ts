@@ -7,6 +7,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './event-card.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class EventCardComponent {
-
-}
+export class EventCardComponent {}

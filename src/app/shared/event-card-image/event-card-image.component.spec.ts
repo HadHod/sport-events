@@ -8,10 +8,9 @@ describe('EventCardImageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EventCardImageComponent]
-    })
-    .compileComponents();
-    
+      imports: [EventCardImageComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(EventCardImageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

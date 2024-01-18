@@ -6,23 +6,11 @@ import { FormsModule } from '@angular/forms';
 import { ChipComponent } from './chip/chip.component';
 import { EventCardImageComponent } from './event-card-image/event-card-image.component';
 
-const COMPONENTS = [
-  EventCardComponent,
-  NavigationComponent,
-  ChipComponent,
-];
+const COMPONENTS = [EventCardComponent, NavigationComponent, ChipComponent];
 
 @NgModule({
-  declarations: [
-    COMPONENTS,
-    EventCardImageComponent,
-  ],
-  imports: [
-    CommonModule,
-  ],
-  exports: [
-    COMPONENTS,
-    FormsModule,
-  ],
+  declarations: [COMPONENTS, EventCardImageComponent],
+  imports: [CommonModule],
+  exports: [COMPONENTS, FormsModule],
 })
-export class SharedModule { }
+export class SharedModule {}

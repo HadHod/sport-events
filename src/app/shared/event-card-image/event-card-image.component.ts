@@ -5,8 +5,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   standalone: false,
   templateUrl: './event-card-image.component.html',
   styleUrl: './event-card-image.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class EventCardImageComponent {
-
-}
+export class EventCardImageComponent {}
