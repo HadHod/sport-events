@@ -10,7 +10,11 @@ describe('EventCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [EventCardComponent, EventCardImageComponent, ChipComponent],
+      declarations: [
+        EventCardComponent,
+        EventCardImageComponent,
+        ChipComponent,
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(EventCardComponent);
