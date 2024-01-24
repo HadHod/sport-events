@@ -7,7 +7,11 @@ import { ChipComponent } from './chip/chip.component';
 import { EventCardImageComponent } from './event-card-image/event-card-image.component';
 import { RouterModule } from '@angular/router';
 
-const EXPORTED_COMPONENTS = [EventCardComponent, NavigationComponent, ChipComponent];
+const EXPORTED_COMPONENTS = [
+  EventCardComponent,
+  NavigationComponent,
+  ChipComponent,
+];
 
 const PRIVATE_COMPONENTS = [EventCardImageComponent];
 
