@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { IndexComponent } from './core/index/index.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
+import { routes as coreRoutes } from './core/core-routing.module';
 
 export const routes: Routes = [
-  { path: '', component: IndexComponent },
+  ...coreRoutes,
   {
     path: 'about',
     loadChildren: () => import('./about/about.module').then(m => m.AboutModule),
