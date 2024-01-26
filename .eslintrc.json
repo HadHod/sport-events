@@ -28,7 +28,14 @@
             "style": "kebab-case"
           }
         ],
-        "comma-dangle": ["error", "always-multiline"]
+        "comma-dangle": ["error", "always-multiline"],
+        "sort-imports": ["error", {
+          "ignoreCase": false,
+          "ignoreDeclarationSort": false,
+          "ignoreMemberSort": false,
+          "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+          "allowSeparatedGroups": false
+        }]
       }
     },
     {

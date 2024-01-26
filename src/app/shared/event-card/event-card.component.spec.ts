@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ChipComponent } from '../chip/chip.component';
 import { EventCardComponent } from './event-card.component';
 import { EventCardImageComponent } from '../event-card-image/event-card-image.component';
-import { ChipComponent } from '../chip/chip.component';
 
 describe('EventCardComponent', () => {
   let component: EventCardComponent;
