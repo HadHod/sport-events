@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sport-events-go": {
+      "hosting": {
+        "sport-events": [
+          "sport-events-go"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sport-events-go"
+  }
+}
