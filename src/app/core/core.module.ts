@@ -1,6 +1,6 @@
+import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CoreRoutingModule } from './core-routing.module';
-import { NgModule } from '@angular/core';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RouterModule } from '@angular/router';
 
@@ -10,4 +10,12 @@ const COMPONENTS = [PageNotFoundComponent];
   declarations: [COMPONENTS],
   imports: [CommonModule, CoreRoutingModule, RouterModule],
 })
-export class CoreModule {}
+export class CoreModule {
+  constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
+    if (parentModule) {
+      throw new Error(
+        'CoreModule has already been loaded. You should only import Core modules in the AppModule only.',
+      );
+    }
+  }
+}

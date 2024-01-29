@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { EventsService } from '../services/events.service';
 import { SharedModule } from '../../shared/shared.module';
 
 @Component({
@@ -9,4 +10,8 @@ import { SharedModule } from '../../shared/shared.module';
   styleUrl: './index.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class IndexComponent {}
+export class IndexComponent {
+  constructor(eventsService: EventsService) {
+    eventsService.getEvents().subscribe(data => console.log(data));
+  }
+}
