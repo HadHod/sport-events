@@ -1,14 +1,16 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CoreRoutingModule } from './core-routing.module';
+import { IndexComponent } from './index/index.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
 
-const COMPONENTS = [PageNotFoundComponent];
+const COMPONENTS = [PageNotFoundComponent, IndexComponent];
 
 @NgModule({
   declarations: [COMPONENTS],
-  imports: [CommonModule, CoreRoutingModule, RouterModule],
+  imports: [CommonModule, CoreRoutingModule, RouterModule, SharedModule],
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {

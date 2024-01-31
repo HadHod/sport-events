@@ -1,5 +1,6 @@
 import { Firestore, collection, collectionData } from '@angular/fire/firestore';
 import { Injectable, inject } from '@angular/core';
+import { SportEvent, converter } from '../../shared/models/sport-event';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -10,9 +11,14 @@ export class EventsService {
     firestore = inject(Firestore);
   }
 
-  public getEvents(): Observable<unknown> {
-    return collectionData(collection(this.firestore, 'test'), {
-      idField: 'id',
-    });
+  public getEvents(): Observable<SportEvent[]> {
+    return collectionData(
+      collection(this.firestore, 'events').withConverter(
+        converter<SportEvent>(),
+      ),
+      {
+        idField: 'id',
+      },
+    );
   }
 }

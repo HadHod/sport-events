@@ -18,6 +18,6 @@ const PRIVATE_COMPONENTS = [EventCardImageComponent];
 @NgModule({
   declarations: [EXPORTED_COMPONENTS, PRIVATE_COMPONENTS],
   imports: [CommonModule, RouterModule],
-  exports: [EXPORTED_COMPONENTS, FormsModule],
+  exports: [EXPORTED_COMPONENTS, FormsModule, CommonModule],
 })
 export class SharedModule {}
