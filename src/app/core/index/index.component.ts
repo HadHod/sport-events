@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EventsService } from '../services/events.service';
 import { Observable } from 'rxjs';
@@ -13,10 +13,12 @@ import { SportEvent } from '../../shared/models/sport-event';
   styleUrl: './index.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class IndexComponent {
-  public sportEvents: Observable<SportEvent[]>;
+export class IndexComponent implements OnInit {
+  public sportEvents: Observable<SportEvent[]> = new Observable();
 
-  constructor(eventsService: EventsService) {
-    this.sportEvents = eventsService.getEvents();
+  constructor(private eventsService: EventsService) {}
+
+  ngOnInit(): void {
+    this.sportEvents = this.eventsService.getEvents();
   }
 }

@@ -6,8 +6,10 @@
 
 <app-event-card></app-event-card>
 
-<div>{{ sportEvents | async | json }}</div>
-
-<div *ngFor="let se of sportEvents | async">
-  {{ se.name }}
-</div>
+@for (se of sportEvents | async; track se.id) {
+  <div>
+    {{ se.name }}
+  </div>
+} @empty {
+  Loading
+}
