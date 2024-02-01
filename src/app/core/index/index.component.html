@@ -1,12 +1,5 @@
-<app-event-card></app-event-card>
-
-<app-event-card></app-event-card>
-
-<app-event-card></app-event-card>
-
-<app-event-card></app-event-card>
-
 @for (se of sportEvents | async; track se.id) {
+  <app-event-card></app-event-card>
   <div>
     {{ se.name }}
   </div>

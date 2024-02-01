@@ -10,8 +10,8 @@ describe('IndexComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      declarations: [IndexComponent],
       imports: [
-        IndexComponent,
         provideFirestore(() => getFirestore()),
         provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
       ],
