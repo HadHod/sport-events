@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  app-event-card {
+    margin: 12px 0;
+  }
+}

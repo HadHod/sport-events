@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { SportEvent } from '../models/sport-event';
 
 @Component({
   selector: 'app-event-card',
@@ -7,4 +8,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './event-card.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class EventCardComponent {}
+export class EventCardComponent {
+  @Input() sportEvent!: SportEvent;
+}

@@ -1,0 +1,16 @@
+:host {
+  width: 700px;
+  border: 1px solid black;
+  display: flex;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (width <= 900px) {
+  :host {
+    width: 100%;
+  }
+}

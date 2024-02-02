@@ -1,7 +1,24 @@
-<div style="height: 100px; width: 200px; border: 1px solid black">
-  <app-event-card-image></app-event-card-image>
+<app-event-card-image></app-event-card-image>
+<!-- {{ sportEvent.id }} -->
 
-  Name
+<div class="content">
+  <span>{{ sportEvent.name }}</span>
+  <span
+    >{{ sportEvent.startTime.toDate() | date: 'YYYY.MM.dd h:mm' }} =>
+    {{ sportEvent.endTime.toDate() | date: 'YYYY.MM.dd h:mm' }}</span
+  >
 
-  <app-chip value="test"></app-chip>
+  <span>ADDRESS</span>
+
+  <div>
+    @for (tag of sportEvent.tags; track tag) {
+      <app-chip [value]="tag"></app-chip>
+    }
+  </div>
+
+  <span>{{ sportEvent.location | json }}</span>
+
+  <span>PRICE</span>
 </div>
+
+<!-- {{ sportEvent.description }} -->

@@ -1,14 +1,16 @@
 import {
   DocumentData,
+  GeoPoint,
   QueryDocumentSnapshot,
   Timestamp,
 } from '@angular/fire/firestore';
 
 export interface SportEvent extends DocumentData {
-  id: string;
+  readonly id: string;
   name: string;
   description: string;
-  logo: string;
+  image: string; // logo, poster
+  location: GeoPoint;
   tags: string[];
   startTime: Timestamp;
   endTime: Timestamp;

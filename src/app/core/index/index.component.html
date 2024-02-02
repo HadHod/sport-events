@@ -1,8 +1,5 @@
 @for (se of sportEvents | async; track se.id) {
-  <app-event-card></app-event-card>
-  <div>
-    {{ se.name }}
-  </div>
+  <app-event-card [sportEvent]="se"></app-event-card>
 } @empty {
   Loading
 }
