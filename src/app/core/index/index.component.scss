@@ -6,4 +6,10 @@
   app-event-card {
     margin: 12px 0;
   }
+
+  .loader-wrapper {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 100px);
+  }
 }
