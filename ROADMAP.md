@@ -9,7 +9,9 @@ Product high level roadmap and plan
 - [x] initial CI configuration
 - [x] initial tests
 - [x] firebase connection
-- [ ] initial deployment
+- [x] initial deployment
+- [ ] initial real data
+- [ ] sorting by date
 
 ## MUST HAVE
 
@@ -20,6 +22,8 @@ Product high level roadmap and plan
 - [ ] displaying event map
 - [ ] final design
 - [ ] firebase test environment
+- [ ] filtering data by tags and location
+- [ ] custom domain
 
 ## LATE STAGE
 
