@@ -1,27 +1,7 @@
-# SportEvents
+# Sport Events
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+This website is a platform for sports enthusiasts to discover and follow live sports events. The website allows users to select their preferred sports and receive personalized event recommendations. Users can also add their own events to the platform, enabling them to share their passion for sports with others.
 
-## Development server
+The website features a clean and intuitive interface, with a focus on ease of use and efficient event discovery. The platform utilizes a robust algorithm to provide users with relevant event recommendations, based on their selected sports and preferences.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Upcoming features include the ability to sort and filter events by various criteria, search for events on a map, receive notifications and updates about upcoming events, and create and join communities around specific sports or events.
