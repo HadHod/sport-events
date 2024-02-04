@@ -6,6 +6,7 @@
     "start": "ng serve --open",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "deploy": "firebase deploy --only hosting && firebase open hosting:site",
     "test": "ng test --watch=false --progress --browsers=ChromeHeadlessCustom",
     "test:watch": "ng test --watch=true --progress --code-coverage",
     "lint": "ng lint"
