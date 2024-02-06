@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  width: 700px;
+  align-items: center;
+
+  .filter-chip {
+    margin: 0 8px;
+    padding: 4px;
+    transition: box-shadow .3s;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: left;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    }
+  }
+}

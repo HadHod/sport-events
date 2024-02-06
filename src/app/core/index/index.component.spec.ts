@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { FilterPanelComponent } from '../../shared/components/filter-panel/filter-panel.component';
 import { IndexComponent } from './index.component';
 import { LoaderComponent } from '../../shared/components/loader/loader.component';
 import { environment } from '../../../environments/environment';
@@ -11,7 +12,7 @@ describe('IndexComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [IndexComponent, LoaderComponent],
+      declarations: [IndexComponent, LoaderComponent, FilterPanelComponent],
       imports: [
         provideFirestore(() => getFirestore()),
         provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),

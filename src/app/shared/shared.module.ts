@@ -2,6 +2,7 @@ import { ChipComponent } from './chip/chip.component';
 import { CommonModule } from '@angular/common';
 import { EventCardComponent } from './event-card/event-card.component';
 import { EventCardImageComponent } from './event-card-image/event-card-image.component';
+import { FilterPanelComponent } from './components/filter-panel/filter-panel.component';
 import { FormsModule } from '@angular/forms';
 import { LoaderComponent } from './components/loader/loader.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -13,6 +14,7 @@ const EXPORTED_COMPONENTS = [
   NavigationComponent,
   ChipComponent,
   LoaderComponent,
+  FilterPanelComponent,
 ];
 
 const PRIVATE_COMPONENTS = [EventCardImageComponent];

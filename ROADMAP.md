@@ -11,7 +11,7 @@ Product high level roadmap and plan
 - [x] firebase connection
 - [x] initial deployment
 - [ ] initial real data
-- [ ] sorting by date
+- [x] sorting by date
 
 ## MUST HAVE
 
