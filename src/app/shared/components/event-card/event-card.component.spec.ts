@@ -3,7 +3,7 @@ import { GeoPoint, Timestamp } from '@angular/fire/firestore';
 import { ChipComponent } from '../chip/chip.component';
 import { EventCardComponent } from './event-card.component';
 import { EventCardImageComponent } from '../event-card-image/event-card-image.component';
-import { SportEvent } from '../models/sport-event';
+import { SportEvent } from '../../models/sport-event';
 
 describe('EventCardComponent', () => {
   let component: EventCardComponent;

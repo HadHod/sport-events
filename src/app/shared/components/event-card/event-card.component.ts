@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { SportEvent } from '../models/sport-event';
+import { SportEvent } from '../../models/sport-event';
 
 @Component({
   selector: 'app-event-card',
