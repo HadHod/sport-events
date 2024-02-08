@@ -4,8 +4,13 @@ import { IndexComponent } from './index/index.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { SportEventDetailsComponent } from './sport-event-details/sport-event-details.component';
 
-const COMPONENTS = [PageNotFoundComponent, IndexComponent];
+const COMPONENTS = [
+  PageNotFoundComponent,
+  IndexComponent,
+  SportEventDetailsComponent,
+];
 
 @NgModule({
   declarations: [COMPONENTS],

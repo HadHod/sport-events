@@ -1,7 +1,27 @@
+$border: 1px;
+$padding: 6px;
+$hover-padding: $border + $padding;
+
 :host {
   width: 700px;
-  border: 1px solid black;
+  border: $border solid black;
+  padding: $padding;
   display: flex;
+  cursor: pointer;
+  border-radius: 8px;
+
+  &:hover {
+    border: 0;
+    background: linear-gradient(90deg, black 50%, transparent 50%),
+                linear-gradient(90deg, black 50%, transparent 50%),
+                linear-gradient(0deg, black 50%, transparent 50%),
+                linear-gradient(0deg, black 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+    padding: $hover-padding;
+    animation: dash 10s linear infinite;
+  }
 
   .content {
     display: flex;
@@ -12,5 +32,11 @@
 @media (width <= 900px) {
   :host {
     width: 100%;
+  }
+}
+
+@keyframes dash {
+  to {
+      background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
   }
 }
