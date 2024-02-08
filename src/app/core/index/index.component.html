@@ -1,10 +1,11 @@
-<app-filter-panel />
+@if (sportEvents | async) {
+  <app-filter-panel />
+}
 
 @for (se of sportEvents | async; track se.id) {
   <app-event-card [sportEvent]="se" />
 } @empty {
   <!-- TODO distinguish between empty and loading -->
-  <!-- TODO fixed center -->
   <div class="loader-wrapper">
     <app-loader />
   </div>
