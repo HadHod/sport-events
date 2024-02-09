@@ -1,5 +1,6 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CoreRoutingModule } from './core-routing.module';
+import { GoogleMapsModule } from '@angular/google-maps';
 import { IndexComponent } from './index/index.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RouterModule } from '@angular/router';
@@ -14,7 +15,7 @@ const COMPONENTS = [
 
 @NgModule({
   declarations: [COMPONENTS],
-  imports: [CoreRoutingModule, RouterModule, SharedModule],
+  imports: [CoreRoutingModule, RouterModule, SharedModule, GoogleMapsModule],
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {

@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { GoogleMapsModule } from '@angular/google-maps';
 import { RouterTestingModule } from '@angular/router/testing';
 import { SportEventDetailsComponent } from './sport-event-details.component';
 
@@ -8,7 +9,7 @@ describe('SportEventDetailsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterTestingModule, GoogleMapsModule],
       declarations: [SportEventDetailsComponent],
     }).compileComponents();
 

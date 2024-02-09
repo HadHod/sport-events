@@ -15,6 +15,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SportEventDetailsComponent implements AfterViewInit {
   public id?: string = undefined;
+  public options = {
+    center: { lat: 54.372158, lng: 18.638306 },
+    zoom: 15,
+  };
 
   constructor(
     private route: ActivatedRoute,
