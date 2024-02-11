@@ -2,13 +2,11 @@
 <!-- {{ sportEvent.id }} -->
 
 <div class="content">
-  <span>{{ sportEvent.name }}</span>
-  <span
-    >{{ sportEvent.startTime.toDate() | date: 'YYYY.MM.dd h:mm' }} =>
-    {{ sportEvent.endTime.toDate() | date: 'YYYY.MM.dd h:mm' }}</span
-  >
-
-  <span>ADDRESS</span>
+  <div class="content__title">
+    <h3>{{ sportEvent.name }}</h3>
+    <span class="content__title__price">{{ price }}</span>
+  </div>
+  <span>{{ displayDate(sportEvent.startTime, sportEvent.endTime) }}</span>
 
   <div>
     @for (tag of sportEvent.tags; track tag) {
@@ -16,9 +14,8 @@
     }
   </div>
 
-  <span>{{ sportEvent.location | json }}</span>
-
-  <span>PRICE</span>
+  <span>Ergo Arena</span>
 </div>
 
 <!-- {{ sportEvent.description }} -->
+<!-- {{ sportEvent.location }} -->

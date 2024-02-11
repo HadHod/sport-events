@@ -6,7 +6,7 @@ import {
   LoaderComponent,
   NavigationComponent,
 } from './components';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -25,5 +25,6 @@ const PRIVATE_COMPONENTS = [EventCardImageComponent];
   declarations: [EXPORTED_COMPONENTS, PRIVATE_COMPONENTS],
   imports: [CommonModule, RouterModule],
   exports: [EXPORTED_COMPONENTS, FormsModule, CommonModule],
+  providers: [DatePipe],
 })
 export class SharedModule {}
