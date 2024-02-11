@@ -1,0 +1,14 @@
+.about {
+  width: 700px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+@media (width <= 900px) {
+  .about {
+    width: 100%;
+  }
+}
